@@ -1,0 +1,249 @@
+[gd_scene load_steps=13 format=3 uid="uid://b4qqd62ga4b0f"]
+
+[ext_resource type="Script" path="res://Script.gd" id="1_wabkl"]
+[ext_resource type="Texture2D" uid="uid://cdqfmtuh87g8" path="res://Success.png" id="2_p8s1g"]
+[ext_resource type="Texture2D" uid="uid://uxm3xmb58ge" path="res://Blackboard.png" id="3_jc1w5"]
+[ext_resource type="Texture2D" uid="uid://dcsy1xg2sy8n" path="res://Failure.png" id="3_ty2hd"]
+[ext_resource type="Texture2D" uid="uid://bsbipyvyjbtc5" path="res://white.png" id="3_vyi6w"]
+[ext_resource type="Texture2D" uid="uid://8x627n7hqhs6" path="res://heartfull.png" id="5_xe3ac"]
+
+[sub_resource type="Animation" id="Animation_v8p80"]
+resource_name = "FailureAnimation"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Failure:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1037, -2), Vector2(294, -2), Vector2(203, -2), Vector2(87, -2), Vector2(-664, -2)]
+}
+
+[sub_resource type="Animation" id="Animation_wbryv"]
+resource_name = "LevelClosing"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackboardUp:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -219), Vector2(0, -581)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BlackboardDown:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 355), Vector2(0, 774)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pixel:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-601, 366)]
+}
+
+[sub_resource type="Animation" id="Animation_yc2yg"]
+resource_name = "LevelOpening"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackboardUp:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -581), Vector2(0, -219)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BlackboardDown:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 774), Vector2(0, 355)]
+}
+
+[sub_resource type="Animation" id="Animation_584lh"]
+resource_name = "Swish"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pixel:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-601, 366), Vector2(490, 366)]
+}
+
+[sub_resource type="Animation" id="Animation_unynr"]
+resource_name = "VictoryAnimation"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Victory:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1037, -2), Vector2(294, -2), Vector2(203, -2), Vector2(87, -2), Vector2(-664, -2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0gqem"]
+_data = {
+"FailureAnimation": SubResource("Animation_v8p80"),
+"LevelClosing": SubResource("Animation_wbryv"),
+"LevelOpening": SubResource("Animation_yc2yg"),
+"Swish": SubResource("Animation_584lh"),
+"VictoryAnimation": SubResource("Animation_unynr")
+}
+
+[node name="Script" type="Node2D"]
+script = ExtResource("1_wabkl")
+
+[node name="SlashTimer" type="Timer" parent="."]
+wait_time = 1.2
+one_shot = true
+
+[node name="MemoryTime" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0gqem")
+}
+
+[node name="BoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 512.0
+offset_top = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 90
+alignment = 1
+
+[node name="BlackboardUp" type="TextureRect" parent="."]
+offset_top = -581.0
+offset_right = 1154.0
+offset_bottom = -7.0
+texture = ExtResource("3_jc1w5")
+
+[node name="BlackboardDown" type="TextureRect" parent="."]
+offset_top = 774.0
+offset_right = 1154.0
+offset_bottom = 1348.0
+texture = ExtResource("3_jc1w5")
+
+[node name="Pixel" type="Sprite2D" parent="."]
+position = Vector2(-601, 366)
+scale = Vector2(1.855, 1.5)
+texture = ExtResource("3_vyi6w")
+
+[node name="Victory" type="TextureRect" parent="."]
+offset_left = 1037.0
+offset_top = -2.0
+offset_right = 1687.0
+offset_bottom = 648.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("2_p8s1g")
+
+[node name="Failure" type="TextureRect" parent="."]
+offset_left = 1037.0
+offset_top = -2.0
+offset_right = 1687.0
+offset_bottom = 648.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("3_ty2hd")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HeartContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_top = 15.87
+offset_right = 1120.0
+offset_bottom = 315.87
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Health1" type="TextureRect" parent="CanvasLayer/HeartContainer"]
+layout_mode = 2
+texture = ExtResource("5_xe3ac")
+
+[node name="Health2" type="TextureRect" parent="CanvasLayer/HeartContainer"]
+layout_mode = 2
+texture = ExtResource("5_xe3ac")
+
+[node name="Health3" type="TextureRect" parent="CanvasLayer/HeartContainer"]
+layout_mode = 2
+texture = ExtResource("5_xe3ac")
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -174.0
+offset_right = 72.0
+offset_bottom = 135.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 96
+text = "10.0
+"
+
+[node name="LevelLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -27.5
+offset_right = 27.5
+offset_bottom = 135.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 96
+text = "9"
+
+[connection signal="timeout" from="SlashTimer" to="." method="_on_slash_timer_timeout"]
+[connection signal="timeout" from="MemoryTime" to="." method="_on_memory_time_timeout"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

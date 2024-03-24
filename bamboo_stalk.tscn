@@ -1,0 +1,116 @@
+[gd_scene load_steps=17 format=3 uid="uid://bmwdajd6xlhky"]
+
+[ext_resource type="Script" path="res://bamboo_stalk.gd" id="1_bx053"]
+[ext_resource type="Texture2D" uid="uid://bsh68qcsw8371" path="res://BambooCut.png" id="2_m7gns"]
+[ext_resource type="Texture2D" uid="uid://cuc6ukpa1jh5b" path="res://BambooFull.png" id="2_y1ho1"]
+[ext_resource type="Texture2D" uid="uid://crokx5ttd6535" path="res://tilemap_packed.png" id="4_c32um"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xsvck"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_y1ho1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m7gns")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvuxa"]
+atlas = ExtResource("4_c32um")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tcgy"]
+atlas = ExtResource("4_c32um")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o6ij"]
+atlas = ExtResource("4_c32um")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7h8t"]
+atlas = ExtResource("4_c32um")
+region = Rect2(64, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uc67q"]
+atlas = ExtResource("4_c32um")
+region = Rect2(0, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tahk3"]
+atlas = ExtResource("4_c32um")
+region = Rect2(16, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fk72g"]
+atlas = ExtResource("4_c32um")
+region = Rect2(32, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8o44s"]
+atlas = ExtResource("4_c32um")
+region = Rect2(48, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uw7y6"]
+atlas = ExtResource("4_c32um")
+region = Rect2(112, 288, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sor4t"]
+atlas = ExtResource("4_c32um")
+region = Rect2(128, 288, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kjde0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hvuxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tcgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3o6ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7h8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uc67q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tahk3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fk72g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8o44s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uw7y6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sor4t")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="BambooStalk" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bx053")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_xsvck")
+
+[node name="ButtonIcon" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -50)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_kjde0")

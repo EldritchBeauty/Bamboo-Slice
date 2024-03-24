@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://8e4h7qgm4ckj"]
+
+[ext_resource type="Script" path="res://menuScript.gd" id="1_wkh5n"]
+[ext_resource type="Texture2D" uid="uid://bhugcastjn5m6" path="res://pixel.png" id="2_qwwyd"]
+[ext_resource type="Theme" uid="uid://nxs03s1t2v0g" path="res://theme.tres" id="2_v80cy"]
+[ext_resource type="Texture2D" uid="uid://pbl7uybgqedm" path="res://4-44059_png-freeuse-download-chicago-vector-transparent-chicago-skyline.png" id="3_7hh2c"]
+[ext_resource type="Texture2D" uid="uid://cpsvi7i80hx4y" path="res://stars.png" id="5_81xkh"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wkh5n")
+
+[node name="Pixel" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0.235294, 1)
+scale = Vector2(1024, 768)
+texture = ExtResource("2_qwwyd")
+centered = false
+
+[node name="Stars" type="Sprite2D" parent="."]
+modulate = Color(1, 0.792157, 0, 0.494118)
+position = Vector2(522, 334)
+texture = ExtResource("5_81xkh")
+
+[node name="City" type="Sprite2D" parent="."]
+position = Vector2(355, 566)
+scale = Vector2(0.664306, 0.664306)
+texture = ExtResource("3_7hh2c")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -480.0
+offset_top = -362.0
+offset_right = 375.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_v80cy")
+text = "First, look closely at your target. You will not have long to prepare.
+
+Then, press the start button to close your eyes and focus.
+
+Whenever you are ready, press the buttons in the right order as fast as you are able."
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -212.0
+offset_top = -382.0
+offset_right = -37.0
+offset_bottom = -316.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("2_v80cy")
+text = "Start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

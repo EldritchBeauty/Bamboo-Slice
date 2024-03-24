@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://nxs03s1t2v0g"]
+
+[ext_resource type="FontFile" uid="uid://b263f1vxjh47g" path="res://NightinTokyo.ttf" id="1_8377g"]
+[ext_resource type="Texture2D" uid="uid://bhugcastjn5m6" path="res://pixel.png" id="2_hrv2e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uo30g"]
+texture = ExtResource("2_hrv2e")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hrv2f"]
+texture = ExtResource("2_hrv2e")
+modulate_color = Color(0, 0, 0.235294, 1)
+
+[resource]
+Button/colors/font_color = Color(1, 0.85098, 0.54902, 1)
+Button/font_sizes/font_size = 54
+Button/fonts/font = ExtResource("1_8377g")
+Button/styles/normal = SubResource("StyleBoxTexture_uo30g")
+Label/colors/font_color = Color(1, 0.85098, 0.54902, 1)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 38
+Label/fonts/font = ExtResource("1_8377g")
+Label/styles/normal = SubResource("StyleBoxTexture_hrv2f")
