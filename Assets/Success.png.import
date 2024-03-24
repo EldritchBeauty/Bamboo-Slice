@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuc6ukpa1jh5b"
-path="res://.godot/imported/BambooFull.png-8ce81e6df239b788717a2a46785d2f12.ctex"
+uid="uid://cdqfmtuh87g8"
+path="res://.godot/imported/Success.png-c3e423db082525f5baae14de3a52e926.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BambooFull.png"
-dest_files=["res://.godot/imported/BambooFull.png-8ce81e6df239b788717a2a46785d2f12.ctex"]
+source_file="res://Assets/Success.png"
+dest_files=["res://.godot/imported/Success.png-c3e423db082525f5baae14de3a52e926.ctex"]
 
 [params]
 

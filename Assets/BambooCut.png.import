@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsh68qcsw8371"
-path="res://.godot/imported/BambooCut.png-737debca34308264bb7b7863d63de41e.ctex"
+path="res://.godot/imported/BambooCut.png-efc21798a88ed55da76fb1d5c1f4ac1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BambooCut.png"
-dest_files=["res://.godot/imported/BambooCut.png-737debca34308264bb7b7863d63de41e.ctex"]
+source_file="res://Assets/BambooCut.png"
+dest_files=["res://.godot/imported/BambooCut.png-efc21798a88ed55da76fb1d5c1f4ac1c.ctex"]
 
 [params]
 

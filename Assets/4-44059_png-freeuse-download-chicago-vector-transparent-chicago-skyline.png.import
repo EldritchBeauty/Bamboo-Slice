@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uxm3xmb58ge"
-path="res://.godot/imported/Blackboard.png-a71d0f8f3cbdcb9aa279089c1c1bce61.ctex"
+uid="uid://pbl7uybgqedm"
+path="res://.godot/imported/4-44059_png-freeuse-download-chicago-vector-transparent-chicago-skyline.png-926ab7fe24a19e7eaeda7f2bdd940ba6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Blackboard.png"
-dest_files=["res://.godot/imported/Blackboard.png-a71d0f8f3cbdcb9aa279089c1c1bce61.ctex"]
+source_file="res://Assets/4-44059_png-freeuse-download-chicago-vector-transparent-chicago-skyline.png"
+dest_files=["res://.godot/imported/4-44059_png-freeuse-download-chicago-vector-transparent-chicago-skyline.png-926ab7fe24a19e7eaeda7f2bdd940ba6.ctex"]
 
 [params]
 

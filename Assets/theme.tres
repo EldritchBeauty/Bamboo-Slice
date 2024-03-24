@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=5 format=3 uid="uid://nxs03s1t2v0g"]
 
-[ext_resource type="FontFile" uid="uid://b263f1vxjh47g" path="res://NightinTokyo.ttf" id="1_8377g"]
-[ext_resource type="Texture2D" uid="uid://bhugcastjn5m6" path="res://pixel.png" id="2_hrv2e"]
+[ext_resource type="FontFile" uid="uid://b263f1vxjh47g" path="res://Assets/NightinTokyo.ttf" id="1_8377g"]
+[ext_resource type="Texture2D" uid="uid://bhugcastjn5m6" path="res://Assets/pixel.png" id="2_hrv2e"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uo30g"]
 texture = ExtResource("2_hrv2e")

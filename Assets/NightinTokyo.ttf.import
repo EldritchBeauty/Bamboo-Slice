@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b263f1vxjh47g"
-path="res://.godot/imported/NightinTokyo.ttf-b12906b6f8a49e0766348fd1ed89af6b.fontdata"
+path="res://.godot/imported/NightinTokyo.ttf-b244dfa094a7398b3a66c9e4dcdfc17b.fontdata"
 
 [deps]
 
-source_file="res://NightinTokyo.ttf"
-dest_files=["res://.godot/imported/NightinTokyo.ttf-b12906b6f8a49e0766348fd1ed89af6b.fontdata"]
+source_file="res://Assets/NightinTokyo.ttf"
+dest_files=["res://.godot/imported/NightinTokyo.ttf-b244dfa094a7398b3a66c9e4dcdfc17b.fontdata"]
 
 [params]
 

@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://b4qqd62ga4b0f"]
 
-[ext_resource type="Script" path="res://Script.gd" id="1_wabkl"]
-[ext_resource type="Texture2D" uid="uid://cdqfmtuh87g8" path="res://Success.png" id="2_p8s1g"]
-[ext_resource type="Texture2D" uid="uid://uxm3xmb58ge" path="res://Blackboard.png" id="3_jc1w5"]
-[ext_resource type="Texture2D" uid="uid://dcsy1xg2sy8n" path="res://Failure.png" id="3_ty2hd"]
-[ext_resource type="Texture2D" uid="uid://bsbipyvyjbtc5" path="res://white.png" id="3_vyi6w"]
-[ext_resource type="Texture2D" uid="uid://8x627n7hqhs6" path="res://heartfull.png" id="5_xe3ac"]
+[ext_resource type="Script" path="res://Scripts/Script.gd" id="1_a8708"]
+[ext_resource type="Texture2D" uid="uid://uxm3xmb58ge" path="res://Assets/Blackboard.png" id="2_w744p"]
+[ext_resource type="Texture2D" uid="uid://bsbipyvyjbtc5" path="res://Assets/white.png" id="3_cpgyg"]
+[ext_resource type="Texture2D" uid="uid://cdqfmtuh87g8" path="res://Assets/Success.png" id="4_mpj43"]
+[ext_resource type="Texture2D" uid="uid://dcsy1xg2sy8n" path="res://Assets/Failure.png" id="5_k2nyq"]
+[ext_resource type="Texture2D" uid="uid://8x627n7hqhs6" path="res://Assets/heartfull.png" id="6_7uwir"]
 
 [sub_resource type="Animation" id="Animation_v8p80"]
 resource_name = "FailureAnimation"
@@ -130,7 +130,7 @@ _data = {
 }
 
 [node name="Script" type="Node2D"]
-script = ExtResource("1_wabkl")
+script = ExtResource("1_a8708")
 
 [node name="SlashTimer" type="Timer" parent="."]
 wait_time = 1.2
@@ -166,18 +166,18 @@ alignment = 1
 offset_top = -581.0
 offset_right = 1154.0
 offset_bottom = -7.0
-texture = ExtResource("3_jc1w5")
+texture = ExtResource("2_w744p")
 
 [node name="BlackboardDown" type="TextureRect" parent="."]
 offset_top = 774.0
 offset_right = 1154.0
 offset_bottom = 1348.0
-texture = ExtResource("3_jc1w5")
+texture = ExtResource("2_w744p")
 
 [node name="Pixel" type="Sprite2D" parent="."]
 position = Vector2(-601, 366)
 scale = Vector2(1.855, 1.5)
-texture = ExtResource("3_vyi6w")
+texture = ExtResource("3_cpgyg")
 
 [node name="Victory" type="TextureRect" parent="."]
 offset_left = 1037.0
@@ -186,7 +186,7 @@ offset_right = 1687.0
 offset_bottom = 648.0
 size_flags_horizontal = 6
 size_flags_vertical = 6
-texture = ExtResource("2_p8s1g")
+texture = ExtResource("4_mpj43")
 
 [node name="Failure" type="TextureRect" parent="."]
 offset_left = 1037.0
@@ -195,7 +195,7 @@ offset_right = 1687.0
 offset_bottom = 648.0
 size_flags_horizontal = 6
 size_flags_vertical = 6
-texture = ExtResource("3_ty2hd")
+texture = ExtResource("5_k2nyq")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -211,15 +211,15 @@ alignment = 1
 
 [node name="Health1" type="TextureRect" parent="CanvasLayer/HeartContainer"]
 layout_mode = 2
-texture = ExtResource("5_xe3ac")
+texture = ExtResource("6_7uwir")
 
 [node name="Health2" type="TextureRect" parent="CanvasLayer/HeartContainer"]
 layout_mode = 2
-texture = ExtResource("5_xe3ac")
+texture = ExtResource("6_7uwir")
 
 [node name="Health3" type="TextureRect" parent="CanvasLayer/HeartContainer"]
 layout_mode = 2
-texture = ExtResource("5_xe3ac")
+texture = ExtResource("6_7uwir")
 
 [node name="TimeLabel" type="Label" parent="CanvasLayer"]
 anchors_preset = 1

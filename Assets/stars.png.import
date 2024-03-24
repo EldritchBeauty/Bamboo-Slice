@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2vt4io0yh5vw"
-path="res://.godot/imported/CutShit.png-5be7af78d8c659215ead05e9a0bb9e2f.ctex"
+uid="uid://cpsvi7i80hx4y"
+path="res://.godot/imported/stars.png-1cd0f134dc55920fbfcf6fc223b818b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CutShit.png"
-dest_files=["res://.godot/imported/CutShit.png-5be7af78d8c659215ead05e9a0bb9e2f.ctex"]
+source_file="res://Assets/stars.png"
+dest_files=["res://.godot/imported/stars.png-1cd0f134dc55920fbfcf6fc223b818b9.ctex"]
 
 [params]
 

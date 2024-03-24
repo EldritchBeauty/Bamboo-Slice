@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8x627n7hqhs6"
-path="res://.godot/imported/heartfull.png-240405bbd251780dd57c4a376dfcde22.ctex"
+uid="uid://7035cr2pdd0m"
+path="res://.godot/imported/BambooShit.png-38117bf6c992b4b24b15bd9e346dcec4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://heartfull.png"
-dest_files=["res://.godot/imported/heartfull.png-240405bbd251780dd57c4a376dfcde22.ctex"]
+source_file="res://Assets/BambooShit.png"
+dest_files=["res://.godot/imported/BambooShit.png-38117bf6c992b4b24b15bd9e346dcec4.ctex"]
 
 [params]
 

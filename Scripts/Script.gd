@@ -1,8 +1,8 @@
 extends Node2D
 
-@onready var BambooStalk = load("res://bamboo_stalk.tscn")
-@onready var HeartFull = load("res://heartfull.png")
-@onready var HeartEmpty = load("res://heartempty.png")
+@onready var BambooStalk = load("res://Scenes/bamboo_stalk.tscn")
+@onready var HeartFull = load("res://Assets/heartfull.png")
+@onready var HeartEmpty = load("res://Assets/heartempty.png")
 @onready var slashTime = $SlashTimer
 @onready var memoryTime = $MemoryTime
 @onready var timeLabel = $CanvasLayer/TimeLabel

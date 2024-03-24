@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpvwuctsan33h"
-path="res://.godot/imported/heartempty.png-d5bfdc172d8e2ddd9a3f43d5224a9f6d.ctex"
+uid="uid://8x627n7hqhs6"
+path="res://.godot/imported/heartfull.png-69a602de6a8d30ed8c55cf553b2adf36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://heartempty.png"
-dest_files=["res://.godot/imported/heartempty.png-d5bfdc172d8e2ddd9a3f43d5224a9f6d.ctex"]
+source_file="res://Assets/heartfull.png"
+dest_files=["res://.godot/imported/heartfull.png-69a602de6a8d30ed8c55cf553b2adf36.ctex"]
 
 [params]
 

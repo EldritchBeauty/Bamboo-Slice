@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crokx5ttd6535"
-path="res://.godot/imported/tilemap_packed.png-7b301e6705a57389d2cd02d385b33920.ctex"
+uid="uid://uxm3xmb58ge"
+path="res://.godot/imported/Blackboard.png-ae47d266e29e0490df1ab604c22cc463.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilemap_packed.png"
-dest_files=["res://.godot/imported/tilemap_packed.png-7b301e6705a57389d2cd02d385b33920.ctex"]
+source_file="res://Assets/Blackboard.png"
+dest_files=["res://.godot/imported/Blackboard.png-ae47d266e29e0490df1ab604c22cc463.ctex"]
 
 [params]
 
